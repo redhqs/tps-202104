@@ -7,6 +7,9 @@ All work for this April playground series is in jupyter notebooks, the main appr
 - parameters found by grid search cross validation
 
 ## Changelog
+2021-04-28 adds SGDClassifier
+- doesn't perform as well as previous attempt, but may be retained for an ensemble approach
+
 2021-04-26 improved feature extraction, scored 0.804
 - with parameter grid search, and added trial TPOT notebook
 
