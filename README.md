@@ -3,10 +3,15 @@ EDA and modelling for the April 2021 kaggle tabular playground series
 
 All work for this April playground series is in jupyter notebooks, the main approach being:
 - some light data cleaning and feature engineering
-- binary classification by gradient boosting classifier
-- parameters found by grid search cross validation
+- binary classification by a range of classifiers, most successful being `GradientBoostingClassifier`
+- model parameters tuned by grid search, cross-validation
 
 ## Changelog
+2021-04-30 end of competition, scored 0.806 ranking in top quartile
+- was not improving on the submission from the 26th, so tried a binning approach to feature engineering
+- with more time, would have applied `CatBoost` to this approach but settled for an ensemble of GBC's and `XGBoost` trained on continuous and binned features
+- this resulted in a marginal increase in accuracy, ending up at top 24% on the private leaderboard
+
 2021-04-28 adds SGDClassifier
 - doesn't perform as well as previous attempt, but may be retained for an ensemble approach
 
